@@ -1,0 +1,555 @@
+@media only screen and (max-width: 570px) {
+  .main_card_container {
+    width: 100%;
+    height: 100vh;
+  }
+  .upper_container {
+    width: 100%;
+    height: 30vh;
+    background-image: url("../../images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: center; */
+    position: relative;
+  }
+  .front_card {
+    width: 19.5rem;
+    height: 11rem;
+    position: absolute;
+    background-image: url("../../images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: center;
+    left: 15px;
+    top: 9rem;
+    z-index: 1;
+    overflow: hidden;
+    color: white;
+    padding: 12px;
+    font-weight: 500;
+  }
+  .back_card {
+    width: 19.5rem;
+    height: 11rem;
+    position: absolute;
+    background-image: url("../../images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: center;
+    right: 15px;
+    top: 3rem;
+    z-index: 0;
+    overflow: hidden;
+    color: white;
+    padding: 12px;
+    font-weight: 500;
+  }
+  .card_details {
+    width: 100%;
+    height: 100%;
+  }
+  .card_logo {
+    height: 5rem;
+  }
+  .card_logo img {
+    width: 4rem;
+  }
+  .card_number {
+    font-size: 15px;
+    height: 2rem;
+  }
+  .card_number h3 {
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 0px;
+  }
+  .card_holder {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding: 0px 10px;
+    justify-content: space-between;
+  }
+  .cvv {
+    position: relative;
+  }
+  .cvv p {
+    position: absolute;
+    right: 3rem;
+    top: 3.9rem;
+    font-weight: 500;
+  }
+  .bottom_container {
+    width: 100%;
+    height: calc(100vh - 30vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all 300ms;
+  }
+  .inputs {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    transition: all 300ms;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 0px 15px;
+  }
+  .inputs_hide {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    display: none;
+    transition: all 300ms;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 0px 15px;
+  }
+  .inputs label {
+    width: 100%;
+    height: 4rem;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    color: hsl(278, 68%, 11%);
+  }
+  .inputs label > input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid rgb(211, 211, 211);
+    outline: none;
+  }
+  .dates_cvv {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .date {
+    width: 70%;
+  }
+  .dates_cvv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .dates_cvv label {
+    width: 6rem;
+    margin: 0px;
+  }
+  .dates_cvv label > input {
+    width: 6rem;
+  }
+  .date label {
+    width: 100%;
+  }
+  .date label > input {
+    width: 7rem;
+    margin: 0px 5px;
+  }
+  .btn {
+    margin-top: 2rem;
+    width: 100%;
+    height: 4rem;
+  }
+  .btn button {
+    width: 100%;
+    height: 4rem;
+    font-size: 24px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 570px) and (max-width: 1150px) {
+  .main_card_container {
+    width: 100%;
+    max-width: 570px;
+    height: 100vh;
+    overflow-y: auto;
+    margin: 1rem auto;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 8px;
+  }
+  .main_card_container::-webkit-scrollbar {
+    display: none;
+  }
+  .upper_container {
+    width: 100%;
+    height: 30vh;
+    background-image: url("../../images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: center; */
+    position: relative;
+  }
+  .front_card {
+    width: 19.5rem;
+    height: 11rem;
+    position: absolute;
+    background-image: url("../../images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: center;
+    left: 15px;
+    top: 9rem;
+    z-index: 1;
+    overflow: hidden;
+    color: white;
+    padding: 12px;
+    font-weight: 500;
+  }
+  .back_card {
+    width: 19.5rem;
+    height: 11rem;
+    position: absolute;
+    background-image: url("../../images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: center;
+    right: 15px;
+    top: 3rem;
+    z-index: 0;
+    overflow: hidden;
+    color: white;
+    padding: 12px;
+    font-weight: 500;
+  }
+  .card_details {
+    width: 100%;
+    height: 100%;
+  }
+  .card_logo {
+    height: 5rem;
+  }
+  .card_logo img {
+    width: 4rem;
+  }
+  .card_number {
+    font-size: 15px;
+    height: 2rem;
+  }
+  .card_number h3 {
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 0px;
+  }
+  .card_holder {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding: 0px 10px;
+    justify-content: space-between;
+  }
+  .cvv {
+    position: relative;
+  }
+  .cvv p {
+    position: absolute;
+    right: 3rem;
+    top: 3.9rem;
+    font-weight: 500;
+  }
+  .bottom_container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inputs {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 0px 15px;
+  }
+  .inputs_hide {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    display: none;
+    transition: all 300ms;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 0px 15px;
+  }
+  .inputs label {
+    width: 100%;
+    height: 4rem;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    color: hsl(278, 68%, 11%);
+  }
+  .inputs label > input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid rgb(211, 211, 211);
+    outline: none;
+  }
+  .dates_cvv {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .date {
+    width: 70%;
+  }
+  .dates_cvv label {
+    width: 6rem;
+  }
+  .dates_cvv label > input {
+    width: 6rem;
+  }
+  .date label {
+    width: 100%;
+  }
+  .date label > input {
+    width: 7rem;
+    margin: 0px 5px;
+  }
+  .btn {
+    margin-top: 2rem;
+    width: 100%;
+    height: 4rem;
+  }
+  .btn button {
+    width: 100%;
+    height: 4rem;
+    font-size: 24px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .main_card_container {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+  }
+  .upper_container {
+    width: 50%;
+    height: 100%;
+    background-image: url("../../images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: center; */
+    position: relative;
+  }
+  .front_card {
+    width: 19.5rem;
+    height: 11rem;
+    position: absolute;
+    background-image: url("../../images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: center;
+    left: 12rem;
+    transform: scale(1.3);
+    top: 9rem;
+    z-index: 1;
+    overflow: hidden;
+    color: white;
+    padding: 12px;
+    font-weight: 500;
+  }
+  .back_card {
+    width: 19.5rem;
+    height: 11rem;
+    transform: scale(1.3);
+    position: absolute;
+    background-image: url("../../images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: center;
+    right: -7rem;
+    top: 25rem;
+    z-index: 0;
+    overflow: hidden;
+    color: white;
+    padding: 12px;
+    font-weight: 500;
+  }
+  .card_details {
+    width: 100%;
+    height: 100%;
+  }
+  .card_logo {
+    height: 5rem;
+  }
+  .card_logo img {
+    width: 4rem;
+  }
+  .card_number {
+    font-size: 15px;
+    height: 2rem;
+  }
+  .card_number h3 {
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 0px;
+  }
+  .card_holder {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding: 0px 10px;
+    justify-content: space-between;
+  }
+  .cvv {
+    position: relative;
+  }
+  .cvv p {
+    position: absolute;
+    right: 3rem;
+    top: 3.9rem;
+    font-weight: 500;
+  }
+  .bottom_container {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inputs {
+    width: 55%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 0px 15px;
+  }
+  .inputs_hide{
+    width: 55%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 0px 15px;
+    display: none;
+  }
+  .inputs label {
+    width: 100%;
+    height: 4rem;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    color: hsl(278, 68%, 11%);
+  }
+  .inputs label > input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid rgb(211, 211, 211);
+    outline: none;
+  }
+  .dates_cvv {
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .date {
+    width: 70%;
+  }
+  .dates_cvv label {
+    width: 6rem;
+  }
+  .dates_cvv label > input {
+    width: 6rem;
+  }
+  .date label {
+    width: 100%;
+  }
+  .date label > input {
+    width: 7rem;
+    margin: 0px 5px;
+  }
+  .btn {
+    margin-top: 2rem;
+    width: 100%;
+    height: 4rem;
+  }
+  .btn button {
+    width: 100%;
+    height: 4rem;
+    font-size: 24px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+.error_hide {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: red;
+  display: none;
+  opacity: 0;
+  transition: all 200ms;
+}
+.error {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: red;
+  opacity: 1;
+  transition: all 400ms;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+}
